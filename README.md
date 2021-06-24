@@ -1,2 +1,0 @@
-# MoraSoft
-school-management-system
