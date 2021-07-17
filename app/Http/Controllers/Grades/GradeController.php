@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Grade;
+namespace App\Http\Controllers\Grades;
 
 use App\Http\Controllers\Controller;
-
 use App\Http\Requests\StoreGradeRequest;
 use App\Models\Grade;
 use Illuminate\Http\Request;
@@ -19,7 +18,7 @@ class GradeController extends Controller
     public function index()
     {
         $Grades = Grade::all();
-        return view('pages.Grade.grade', compact('Grades'));
+        return view('pages.Grades.grade', compact('Grades'));
     }
 
     /**
@@ -39,6 +38,11 @@ class GradeController extends Controller
      */
     public function store(StoreGradeRequest $request)
     {
+
+        if (Grade::where('Name->ar', $request->Name)->orWhere('Name->en',$request->Name_en)->exists()) {
+
+            return redirect()->back()->withErrors(trans('message_trans.exists'));
+        }
 
         try {
             $validated = $request->validated();
@@ -88,6 +92,7 @@ class GradeController extends Controller
      */
     public function update(StoreGradeRequest $request)
     {
+
         try {
             $validated = $request->validated();
             $Grades = Grade::findOrFail($request->id);
