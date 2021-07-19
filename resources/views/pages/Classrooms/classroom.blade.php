@@ -53,8 +53,9 @@
                                 <?php $i++; ?>
                                 <tr>
                                     <td>{{$i}}</td>
+
                                     <td>{{$My_Class->name_class}}</td>
-                                    <td>{{ $My_Class->Grades->Name }}</td>
+                                    <td>{{$My_Class->Grades->name }}</td>
                                     <td>
                                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
                                                 data-target="#edit_{{$My_Class->id}}"
@@ -95,7 +96,7 @@
                                                                 :</label>
                                                             <input id="name" type="text" name="Name"
                                                                    class="form-control"
-                                                                   value="{{$My_Class->getTranslation('name', 'ar')}}"
+                                                                   value="{{$My_Class->getTranslation('name_class', 'ar')}}"
                                                                    required>
                                                             <input id="id" type="hidden" name="id" class="form-control"
                                                                    value="{{ $My_Class->id }}">
@@ -105,7 +106,7 @@
                                                                    class="mr-sm-2">{{ trans('My_Classes_trans.stage_name_en') }}
                                                                 :</label>
                                                             <input type="text" class="form-control"
-                                                                   value="{{$My_Class->getTranslation('name', 'en')}}"
+                                                                   value="{{$My_Class->getTranslation('name_class', 'en')}}"
                                                                    name="Name_en" required>
                                                         </div>
                                                     </div>
@@ -169,7 +170,7 @@
 
         <div class="modal fade" id="addClassModal" tabindex="-1" role="dialog" aria-labelledby="addClassModalLabel"
              aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 style="font-family: 'Cairo',sans-serif" class="modal-title"
@@ -213,7 +214,7 @@
                                                     <div class="box">
                                                         <select class="fancyselect" name="Grade_id">
                                                             @foreach ($Grades as $Grade)
-                                                                <option value="{{ $Grade->id }}">{{ $Grade->Name }}</option>
+                                                                <option value="{{ $Grade->id }}">{{ $Grade->name }}</option>
                                                             @endforeach
                                                         </select>
                                                     </div>
