@@ -111,6 +111,26 @@
                                                         </div>
                                                     </div>
 
+
+                                                    <div class="form-group">
+                                                        <label
+                                                                for="exampleFormControlTextarea1">{{ trans('My_Classes_trans.Name_Grade') }}
+                                                            :</label>
+                                                        <select class="form-control form-control-lg"
+                                                                id="exampleFormControlSelect1" name="Grade_id">
+                                                            <option value="{{ $My_Class->Grades->id }}">
+                                                                {{ $My_Class->Grades->name }}
+                                                            </option>
+                                                            @foreach ($Grades as $Grade)
+                                                                <option value="{{ $Grade->id }}">
+                                                                    {{ $Grade->name }}
+                                                                </option>
+                                                            @endforeach
+                                                        </select>
+
+                                                    </div>
+
+
                                                     <br><br>
 
                                                     <div class="modal-footer">
@@ -202,7 +222,7 @@
                                                            class="mr-sm-2">{{ trans('My_Classes_trans.Name_class_en') }}
                                                         :</label>
                                                     <input class="form-control" type="text" name="Name_class_en"
-                                                           required/>
+                                                           required />
                                                 </div>
 
 
