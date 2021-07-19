@@ -39,6 +39,8 @@ Route::get('/', function () {
     // class room
     Route::group(['namespace' => 'Classrooms'], function () {
         Route::resource('classroom', 'ClassroomController');
+        Route::post('delete_all', 'ClassroomController@delete_all')->name('delete_all');
+        Route::post('Filter_Classes', 'ClassroomController@Filter_Classes')->name('Filter_Classes');
     });
 });
 

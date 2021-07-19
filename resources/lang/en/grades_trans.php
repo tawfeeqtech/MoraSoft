@@ -13,6 +13,7 @@ return [
     'Submit'        => 'Save',
     'Name'          => 'Name',
     'Processes'     => 'Processes',
+    'delete_Grade_Error'=>'The Grade cannot be deleted because there are classes attached to it',
     'Edit'          => 'Edit',
     'Delete'        => 'Delete',
     'Close'         => 'Close',
