@@ -11,6 +11,7 @@ return [
     'classes'=>'Classes',
     'List_classes'=>'Classes List',
     'sections'=>'Sections',
+    'List_sections'=>'List Sections',
     'students'=>'Students',
     'Teachers'=>'Teachers',
     'Parents'=>'Parents',
