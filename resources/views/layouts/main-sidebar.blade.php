@@ -17,7 +17,7 @@
                     <!-- menu title -->
                     <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">{{trans('main_trans.Program_name')}} </li>
 
-                    <!-- Grades-->
+                    <!-- Grades المراحل الدراسية-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Grades-menu">
                             <div class="pull-left"><i class="fas fa-school"></i><span
@@ -31,7 +31,7 @@
                         </ul>
                     </li>
 
-                    <!-- menu item calendar-->
+                    <!-- classroom الصفوف -->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#calendar-menu">
                             <div class="pull-left"><i class="fa fa-building"></i><span
@@ -44,7 +44,7 @@
                         </ul>
                     </li>
 
-                    <!-- sections-->
+                    <!-- sections الاقسام-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#sections-menu">
                             <div class="pull-left"><i class="fas fa-chalkboard"></i></i><span
@@ -57,7 +57,7 @@
                         </ul>
                     </li>
 
-                    <!-- students-->
+                    <!-- students الطلاب-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu">
                             <div class="pull-left"><i class="fas fa-user-graduate"></i></i></i><span
@@ -71,7 +71,7 @@
                         </ul>
                     </li>
 
-                    <!-- Teachers-->
+                    <!-- Teachers المعلمين-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Teachers-menu">
                             <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i></i><span
@@ -85,7 +85,7 @@
                         </ul>
                     </li>
 
-                    <!-- Parents-->
+                    <!-- Parents اولياء الامور-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Parents-menu">
                             <div class="pull-left"><i class="fas fa-user-tie"></i><span
@@ -94,12 +94,12 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="Parents-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="calendar.html">Events Calendar </a> </li>
-                            <li> <a href="calendar-list.html">List Calendar</a> </li>
+                            <li> <a href="#">{{trans('main_trans.List_Parents')}}</a> </li>
+                            <li> <a href="{{url('add_parent')}}">{{trans('main_trans.Add_Parent')}}</a> </li>
                         </ul>
                     </li>
 
-                    <!-- Accounts-->
+                    <!-- Accounts الحسابات-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Accounts-menu">
                             <div class="pull-left"><i class="fas fa-money-bill-wave-alt"></i><span
@@ -113,7 +113,7 @@
                         </ul>
                     </li>
 
-                    <!-- Attendance-->
+                    <!-- Attendance الحضور والغياب-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Attendance-icon">
                             <div class="pull-left"><i class="fas fa-calendar-alt"></i><span class="right-nav-text">{{trans('main_trans.Attendance')}}</span></div>
@@ -127,7 +127,7 @@
                         </ul>
                     </li>
 
-                    <!-- Exams-->
+                    <!-- Exams الامتحانات-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Exams-icon">
                             <div class="pull-left"><i class="fas fa-book-open"></i><span class="right-nav-text">{{trans('main_trans.Exams')}}</span></div>
@@ -141,7 +141,7 @@
                         </ul>
                     </li>
 
-                    <!-- library-->
+                    <!-- library المكتبة-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#library-icon">
                             <div class="pull-left"><i class="fas fa-book"></i><span class="right-nav-text">{{trans('main_trans.library')}}</span></div>
@@ -155,7 +155,7 @@
                         </ul>
                     </li>
 
-                    <!-- Onlinec lasses-->
+                    <!-- Online lasses حصص اونلاين-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Onlineclasses-icon">
                             <div class="pull-left"><i class="fas fa-video"></i><span class="right-nav-text">{{trans('main_trans.Online_classes')}}</span></div>
@@ -169,7 +169,7 @@
                         </ul>
                     </li>
 
-                    <!-- Settings-->
+                    <!-- Settings الاعدادات-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Settings-icon">
                             <div class="pull-left"><i class="fas fa-cogs"></i><span class="right-nav-text">{{trans('main_trans.Settings')}}</span></div>
@@ -183,7 +183,7 @@
                         </ul>
                     </li>
 
-                    <!-- Users-->
+                    <!-- Users المستخدمين-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Users-icon">
                             <div class="pull-left"><i class="fas fa-users"></i><span class="right-nav-text">{{trans('main_trans.Users')}}</span></div>

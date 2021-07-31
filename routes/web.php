@@ -50,6 +50,10 @@ Route::get('/', function () {
 
     });
 
+    //==============================parents============================
+
+    Route::view('add_parent','livewire.show_Form');
+
 
 });
 
