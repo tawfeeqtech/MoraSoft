@@ -8,7 +8,7 @@
                     <div class="col">
                         <label for="title">{{trans('Parent_trans.Email')}}</label>
                         <input type="email" wire:model="Email"  class="form-control">
-                        @error('Email')$Religion_Father_id
+                        @error('Email')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
