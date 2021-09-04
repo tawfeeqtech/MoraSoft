@@ -52,9 +52,12 @@ Route::get('/', function () {
 
     //==============================parents============================
 
-    Route::view('add_parent','livewire.show_Form');
+    Route::view('add_parent', 'livewire.show_Form');
 
-
+//==============================Teachers============================
+    Route::group(['namespace' => 'Teachers'], function () {
+        Route::resource('Teachers', 'TeacherController');
+    });
 });
 
 
